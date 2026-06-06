@@ -1,5 +1,11 @@
+import Teoria from "/components/Teoria";
 function App() {
-  return <h1>Hola Mundo</h1>;
+  return (
+    <main className="comtainer my-3">
+      <h1 className="text-center">Hola Mundo con Reak</h1>
+      <Teoria />
+    </main>
+  );
 }
 
 export default App;
