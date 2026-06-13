@@ -4,7 +4,8 @@ const Contador = () => {
     const [numero, setNumero] = useState(0)
   //let numero = 0;
   const incrementar = () => {
-    numero = numero + 1;
+    //numero = numero + 1;
+    setNumero(numero + 1)
     console.log(numero);
   };
   return (
