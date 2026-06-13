@@ -1,21 +1,28 @@
-import { useState} from "react";
+import { useState } from "react";
 
 const Contador = () => {
-    const [numero, setNumero] = useState(0)
+  const [numero, setNumero] = useState(0);
   //let numero = 0;
   const incrementar = () => {
     //numero = numero + 1;
-    setNumero(numero + 1)
-    console.log(numero);
   };
   return (
     <section className="border rounded-3 text-center py-3">
       <h2>Contador</h2>
       <p className="lead ">{numero}</p>
-      <button className="btn btn-primary me-3" onClick={incrementar}>
+      <button
+        className="btn btn-primary me-3"
+        onClick={() => setNumero(numero + 1)}
+      >
         +
       </button>
-      <button className="btn btn-danger">-</button>
+      <button 
+      className="btn btn-danger" 
+      onClick={() => setNumero(numero - 1)}
+      >
+        -
+      </button>
+      
     </section>
   );
 };
