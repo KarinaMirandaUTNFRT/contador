@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Teoria = () => {
+//const Teoria = (props) => {
+  const Teoria = ({comisionProps, moduloProps}) =>{
   return (
     <section>
    <h2>Teoria de react</h2>
@@ -22,8 +23,9 @@ mantenimiento de aplicaciones a gran escala.</p>
        Cada componente en React puede tener su propio estado (state) y propiedades (props). 
        El estado es una forma de almacenar y manejar datos internos del componente, mientras 
        que las propiedades son datos que se pasan de un componente padre a un componente hijo. Al combinar estos elementos, React permite la creación de interfaces interactivas, donde los cambios en los datos se reflejan automáticamente en la interfaz de usuario.</p>        
+    
     <div className="alert alert-primary" role="alert">
-  Curso Fullstack comision: 
+  Curso Fullstack comision: {comisionProps}{moduloProps}
 </div>
     </section>
   )
