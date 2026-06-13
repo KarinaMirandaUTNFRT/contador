@@ -2,9 +2,10 @@ import React from 'react';
 
 const Contador = () => {
   return (
-    <div>
+    <section className='border rounded-3'>
+        <h2 className='Text-center'>Contador</h2>
       
-    </div>
+    </section>
   ); 
 };
 

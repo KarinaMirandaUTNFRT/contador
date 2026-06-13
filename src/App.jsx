@@ -1,5 +1,5 @@
 import Contador from "./components/Contador";
-import Teoria from "/components/Teoria";
+import Teoria from "./components/Teoria";
 function App() {
    const comision =23
    const modulo ="modulo 2"
